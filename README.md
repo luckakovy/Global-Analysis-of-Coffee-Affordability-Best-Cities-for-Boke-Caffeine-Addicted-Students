@@ -20,7 +20,7 @@ Second, to account for broader cost-of-living conditions, we construct a **gener
 
 Third, a student-oriented **Coffee Survival Index** is introduced. For a fixed monthly coffee budget (baseline: 30 USD), the index measures how many days a student can afford one cup of coffee per day in a given city. This metric is intuitive and complements the income-based measure by focusing on absolute prices rather than income shares.
 
-Finally, these dimensions are combined into a simple **student score** that integrates coffee affordability, relative coffee prices, and restaurant cost levels. This composite indicator is used to rank cities in terms of overall coffee friendliness for students. Throughout the analysis, results are visualized using scatter plots, bar charts, and country-level aggregations to highlight relationships between income, prices, and affordability.
+Finally, these dimensions are combined into a simple **student score** that integrates coffee affordability, relative coffee prices, and general price levels. This composite indicator is used to rank cities in terms of overall coffee friendliness for students. Throughout the analysis, results are visualized using scatter plots, bar charts, and country-level aggregations to highlight relationships between income, prices, and affordability.
 
 ## Key findings
 
@@ -34,4 +34,4 @@ Finally, these dimensions are combined into a simple **student score** that inte
   The Coffee Survival Index shows that a fixed monthly coffee budget lasts longer in cities with lower absolute coffee prices, regardless of income levels (intuitively) - order of cities by survival index exactly corresponds to order of cities based on the coffee prices in USD - top 10 cities with lowest coffee prices in absolute terms: "top_10_cities_by_survival.png". As a result, survival days tend to be lower in high-income cities where coffee prices are higher. (viz. "survival_vs_income.png" plot)
 
 - **A small set of cities consistently performs well across multiple dimensions.**  
-  When affordability, relative prices, and restaurant cost levels are combined into a composite student score, the top-ranked cities offer a favorable balance between income, local prices, and everyday consumption costs, making them particularly attractive for coffee-consuming students.
+  When affordability, relative prices, and general price levels are combined into a composite student score, the top-ranked cities offer a favorable balance between income, local prices, and everyday consumption costs, making them particularly attractive for coffee-consuming students.
