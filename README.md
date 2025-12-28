@@ -3,10 +3,11 @@
 ## Project overview
 
 This project analyses coffee affordability across cities worldwide with a student-centred focus.  
-We ask three related questions: 
+We ask four related questions: 
     (1) How much of a typical resident’s daily income does one cup of coffee consume? (income-based affordability), 
-    (2) Is coffee cheap or expensive relative to the local price environment (price-context), and 
-    (3) For a fixed student coffee budget, how many days will one cup per day last (Coffee Survival Index)?
+    (2) Is coffee cheap or expensive relative to the local price environment (price-context), 
+    (3) For a fixed student coffee budget, how many days will one cup per day last (Coffee Survival Index), and
+    (4) What are the most stategic locations for coffee-loving students based on coffee affordability, relative coffee prices, and general price levels?
 
 To answer these questions we combine cleaned city-level price data (coffee, restaurant and market items) with average monthly net salaries. The analysis constructs a simple city–price index, several affordability metrics, and a compact “student score” to rank cities for caffeine-addicted students. Data cleaning and initial extraction were performed by the team (see Data section). The notebook `analysis.ipynb` reproduces all steps and exports the main tables and figures in the `figures/` folder.
 
