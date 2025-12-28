@@ -4,11 +4,11 @@
 
 This project analyses coffee affordability across cities worldwide with a student-centred focus.  
 We ask three related questions: 
-(1) How much of a typical resident’s daily income does one cup of coffee consume? (income-based affordability), 
-(2) Is coffee cheap or expensive relative to the local price environment (price-context), and 
-(3) For a fixed student coffee budget, how many days will one cup per day last (Coffee Survival Index)?
+    (1) How much of a typical resident’s daily income does one cup of coffee consume? (income-based affordability), 
+    (2) Is coffee cheap or expensive relative to the local price environment (price-context), and 
+    (3) For a fixed student coffee budget, how many days will one cup per day last (Coffee Survival Index)?
 
-To answer these questions we combine cleaned city-level price data (coffee, restaurant and market items) with average monthly net salaries. The analysis constructs a simple city–price index, several affordability metrics, and a compact “student score” to rank cities for caffeine-addicted students. Data cleaning and initial extraction were performed by the team (see Data section). The notebook `analysis.ipynb` reproduces all steps and exports the main tables and figures in `final_coffee_affordability_results.csv` and the `figures/` folder.
+To answer these questions we combine cleaned city-level price data (coffee, restaurant and market items) with average monthly net salaries. The analysis constructs a simple city–price index, several affordability metrics, and a compact “student score” to rank cities for caffeine-addicted students. Data cleaning and initial extraction were performed by the team (see Data section). The notebook `analysis.ipynb` reproduces all steps and exports the main tables and figures in the `figures/` folder.
 
 ## Analysis
 
@@ -22,3 +22,19 @@ Third, a student-oriented **Coffee Survival Index** is introduced. For a fixed m
 
 Finally, these dimensions are combined into a simple **student score** that integrates coffee affordability, relative coffee prices, and restaurant cost levels. This composite indicator is used to rank cities in terms of overall coffee friendliness for students. Throughout the analysis, results are visualized using scatter plots, bar charts, and country-level aggregations to highlight relationships between income, prices, and affordability.
 
+## Key findings
+
+- **Income is the dominant driver of coffee affordability.**  
+  Cities with higher average incomes consistently exhibit lower coffee affordability burdens, even when absolute coffee prices are relatively high. Differences in income explain a much larger share of affordability variation than coffee prices alone.
+
+- **Coffee prices normalized by local price levels provide important context.**  
+  After controlling for the general price environment using a city-level price index, coffee that appears cheap in absolute terms can still be relatively expensive in low-income cities. Conversely, coffee in high-income cities is often expensive in absolute terms but not unusually expensive relative to other goods and services.
+
+- **Student budget outcomes depend primarily on absolute coffee prices.**  
+  The Coffee Survival Index shows that a fixed monthly coffee budget lasts longer in cities with lower absolute coffee prices, regardless of income levels. As a result, survival days tend to be lower in high-income cities where coffee prices are higher.
+
+- **Results are robust to reasonable budget assumptions.**  
+  Sensitivity analysis using monthly coffee budgets of 20, 30, and 50 USD demonstrates that relative differences between cities remain largely stable. This indicates that the main conclusions are not driven by a specific budget choice.
+
+- **A small set of cities consistently performs well across multiple dimensions.**  
+  When affordability, relative prices, and restaurant cost levels are combined into a composite student score, the top-ranked cities offer a favorable balance between income, local prices, and everyday consumption costs, making them particularly attractive for coffee-consuming students.
