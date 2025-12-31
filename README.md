@@ -9,7 +9,7 @@ We ask four related questions:
     (3) For a fixed student coffee budget, how many days will one cup per day last (Coffee Survival Index), and
     (4) What are the most stategic locations for coffee-loving students based on coffee affordability, relative coffee prices, and general price levels?
 
-To answer these questions we combine cleaned city-level price data (coffee, restaurant and market items) with average monthly net salaries. The analysis constructs a simple city–price index, several affordability metrics, and a compact “student score” to rank cities for caffeine-addicted students. Data cleaning and initial extraction were performed by the team (see Data section). The notebook `analysis.ipynb` reproduces all steps and exports the main tables and figures in the `figures/` folder.
+To answer these questions we combine cleaned city-level price data (coffee, restaurant and market items) with average monthly net salaries. The analysis constructs a simple city–price index, several affordability metrics, and a compact “student score” to rank cities for caffeine-addicted students. The notebook `analysis.ipynb` reproduces all steps and exports the main tables and figures in the `figures/` folder.
 
 ## Analysis
 
@@ -29,10 +29,15 @@ Finally, these dimensions are combined into a simple **student score** that inte
   Cities with higher average incomes consistently exhibit lower coffee affordability burdens, even when absolute coffee prices are relatively high (viz. "income_vs_coffee.png" plot). Furthermore, coffee affordability is driven much more by income differences than by general price levels (markets or restaurents). Cities with high restaurant or market prices often maintain low coffee affordability burdens due to higher income levels. In contrast, cities with lower restaurant or market prices can still experience poor coffee affordability when income levels are low. (viz. "market_vs_coffee.png" and "restaurant_vs_coffee.png" plots)
 
 - **Coffee prices normalized by local price levels provide important context.**  
-  After controlling for the general price environment using a city-level price index, coffee that appears cheap in absolute terms can still be relatively expensive in low-income cities. (viz. "relative_price_vs_affordabilit" plot)
+  After controlling for the general price environment using a city-level price index, coffee that appears cheap in absolute terms can still be relatively expensive in low-income cities. (viz. "relative_price_vs_affordability" plot)
 
 - **Student budget outcomes depend primarily on absolute coffee prices.**  
-  The Coffee Survival Index shows that a fixed monthly coffee budget lasts longer in cities with lower absolute coffee prices, regardless of income levels (intuitively) - order of cities by survival index exactly corresponds to order of cities based on the coffee prices in USD - top 10 cities with lowest coffee prices in absolute terms: "top_10_cities_by_survival.png". As a result, survival days tend to be lower in high-income cities where coffee prices are higher. (viz. "survival_vs_income.png" plot)
+  The Coffee Survival Index shows that a fixed monthly coffee budget lasts longer in cities with lower absolute coffee prices, regardless of income levels (intuitively) - order of cities by survival index exactly corresponds to order of cities based on the coffee prices in USD - top 10 cities with lowest coffee prices in absolute terms: "top_10_cities_by_survival.png". As a result, survival days tend to be lower in high-income cities where coffee prices are higher. (viz. "survival_vs_income.png" plot) - rewrite somehow!!!
 
 - **A small set of cities consistently performs well across multiple dimensions.**  
   When affordability, relative prices, and general price levels are combined into a composite student score, the top-ranked cities offer a favorable balance between income, local prices, and everyday consumption costs, making them particularly attractive for coffee-consuming students.
+
+## Limitations
+- Snapshot data only (no timeseries); results reflect the dates the datasets were collected.
+- No city-level geocoding of coffee affordability was performed (we used country-level aggregation for spatial views).
+- The price index uses a simple mean of restaurant and market averages — alternative weightings are possible.
