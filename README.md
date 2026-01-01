@@ -37,6 +37,11 @@ Finally, these dimensions are combined into a simple **student score** that inte
 - **A small set of cities consistently performs well across multiple dimensions.**  
   When affordability, relative prices, and general price levels are combined into a composite student score, the top-ranked cities offer a favorable balance between income, local prices, and everyday consumption costs, making them particularly attractive for coffee-consuming students.
 
+## Data
+The analysis relies on city-level cost-of-living collected from RapidAPI, specifically the Cost of Living and Prices API and and income data collected from Numbeo. 
+City-level prices are collected for items in two categories: restaurants and markets. Coffee prices are measured using the cappuccino item, which serves as a consistent proxy for out-of-home coffee consumption. For each item, the API reports minimum, average, and maximum prices in local currency and in USD. The analysis uses average prices in USD to ensure comparability across cities.
+
+
 ## Limitations
 - Snapshot data only (no timeseries); results reflect the dates the datasets were collected.
 - No city-level geocoding of coffee affordability was performed (we used country-level aggregation for spatial views).
