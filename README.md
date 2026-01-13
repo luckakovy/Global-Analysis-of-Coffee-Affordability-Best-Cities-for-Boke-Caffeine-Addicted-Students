@@ -46,3 +46,29 @@ City-level prices are collected for items in two categories: restaurants and mar
 - Snapshot data only (no timeseries); results reflect the dates the datasets were collected.
 - No city-level geocoding of coffee affordability was performed (we used country-level aggregation for spatial views).
 - The price index uses a simple mean of restaurant and market averages — alternative weightings are possible.
+
+
+## How to run the project
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/luckakovy/Global-Analysis-of-Coffee-Affordability-Best-Cities-for-Boke-Caffeine-Addicted-Students.git
+
+  Alternatively, download the repository as a ZIP file from GitHub and extract it.
+
+2. Install the required Python packages:
+   ```bash
+   pip install -r requirements.txt
+
+3. Open the project in Jupyter Notebook or VS Code.
+
+4. Run the final notebook:
+   - Open `main.ipynb`
+   - Restart the kernel
+   - Run all cells from top to bottom
+
+   This notebook presents the final results of the project.
+
+5. (Optional) Explore the full analysis:
+   - `analysis.ipynb` contains the exploratory analysis, intermediate steps, and robustness checks.
+   - It is used to generate the outputs displayed in `main.ipynb`.
+
