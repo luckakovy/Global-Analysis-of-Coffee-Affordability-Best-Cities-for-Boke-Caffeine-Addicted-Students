@@ -61,14 +61,18 @@ City-level prices are collected for items in two categories: restaurants and mar
 
 3. Open the project in Jupyter Notebook or VS Code.
 
-4. Run the final notebook:
+4. Download the data:
+   - Open 'get the data.ipynb' and run the code for prices.csv
+   - The salary was manually collected due to high cost of API for the data.
+
+5. Run the final notebook:
    - Open `main.ipynb`
    - Restart the kernel
    - Run all cells from top to bottom
 
    This notebook presents the final results of the project.
 
-5. (Optional) Explore the full analysis:
+6. (Optional) Explore the full analysis:
    - `analysis.ipynb` contains the exploratory analysis, intermediate steps, and robustness checks.
    - It is used to generate the outputs displayed in `main.ipynb`.
 
