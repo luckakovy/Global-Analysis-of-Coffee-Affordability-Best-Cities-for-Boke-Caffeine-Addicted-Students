@@ -63,7 +63,7 @@ City-level prices are collected for items in two categories: restaurants and mar
 
 4. Download the data:
    - Open 'get the data.ipynb' and run the code for prices.csv
-   - The salary was manually collected due to high cost of API for the data.
+   - The salary data was manually collected due to high cost of API.
 
 5. Run the final notebook:
    - Open `main.ipynb`
